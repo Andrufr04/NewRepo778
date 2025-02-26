@@ -17,13 +17,13 @@ DWORD WINAPI ThreadProc1(LPVOID lp)
 {
     ofstream file;
     file.open("Task1.txt");
-    for (int i = 0; i < 200; i++)
+    for (int i = 0; i < 41; i++)
     {
-        file << "information1\n";
+        file << "a\n";
         Sleep(10);
     }
     file.close();
-    MessageBox(0, TEXT("����� ��������"), TEXT(""), MB_OK | MB_ICONINFORMATION);
+    MessageBox(0, TEXT("Все ок)"), TEXT(""), MB_OK | MB_ICONINFORMATION);
     return 0;
 }
 
@@ -31,9 +31,9 @@ DWORD WINAPI ThreadProc2(LPVOID lp)
 {
     ofstream file;
     file.open("Task2.txt");
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 78; i++)
     {
-        file << "information2\n";
+        file << "b\n";
         Sleep(1);
     }
     file.close();
@@ -44,9 +44,9 @@ DWORD WINAPI ThreadProc3(LPVOID lp)
 {
     ofstream file;
     file.open("Task3.txt");
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 99; i++)
     {
-        file << "information3\n";
+        file << "c\n";
         Sleep(1);
     }
     file.close();
